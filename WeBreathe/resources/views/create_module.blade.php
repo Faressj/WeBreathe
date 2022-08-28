@@ -41,7 +41,7 @@
                     <div>
                         <label for="">Type du module</label>
                         <select name="type" value="{{ old('type') }}">
-                            <option value="">--Please choose an option--</option>
+                            <option value="">Choisissez un type de module</option>
                                 <option value="temperature_sensor">Capteurs de Température (°C)</option>
                                 <option value="humidity_sensor">Capteur d'humidité (g/m3)</option>
                                 <option value="pression_sensor">Capteur de pression (Pa)</option>

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html {
+    background-color: #ebecf0;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+#curve_chart{
+    float: left;
+    width: 900px; height: 300px;
+}
+rect{
+    fill: #ebecf0;
+    
+}
+
+.clignotegreen {
+    color:green;
+    animation: clignote 2s linear infinite;
+}
+.clignotered {
+    color:red;
+    animation: clignote 2s linear infinite;
+}
+  @keyframes clignote {  
+    50% { opacity: 0; }
+  }
+
+
+/*Stying for small screens*/
+
+.module{
+    position: relative;
+    float: left;
+    border: solid;
+    border-color: black;
+    width:23vh;
+    margin: 2.5%;
+    padding:2.5%;
+    border-radius: 16px;
+}
+.modules{
+    width: 100%;
+    display: table;
+    float: left;
+}
+.buttons{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.button{
+    display: block;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25vh;
+    height: 100%;
+    border: none;
+    background-color: #00a8ff;
+    font-size: 18px;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.button:hover{
+    transform: rotateX(15deg);
+    box-shadow: 0 15px 15px #00a8ff;
+}
+
+#chart_div{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
